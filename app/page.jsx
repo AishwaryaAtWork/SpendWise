@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-
+import Head from "next/head";
 
 export default function Home() {
 
@@ -13,6 +13,9 @@ export default function Home() {
   const [total, setTotal] = useState(0);
 
   return (
+    <>
+    <Head><title>SpendWise | Your Expense Tracker</title></Head>
+    
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4 bg-black">
       <div className="z-10 w-full max-w-3xl items-center justify-between font-mono text-sm ">
 
@@ -55,5 +58,6 @@ export default function Home() {
 
       </div>
     </main>
+    </>
   )
 }
